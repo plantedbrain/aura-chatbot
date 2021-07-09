@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
+body
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color:#171717;
+}
+table
+{
+  margin:auto;
+  /* border:5px solid white; */
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  padding: 25px 10px;
+  padding-left: 35px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* background-color: #69A488; */
+  /* background-color: #83AE9A; */
+  background-color: #6F7F9C;
+  width: 55%;
+}
+input[type=radio]
+{
+  line-height: normal;
+  margin-left: 30px;
+}
+#headings {
+  font-size: 23px;
+  color: #44464B;
+}
+#item {
+  /* border:5px solid white; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #515459;
+}
+#pitem {
+  /* border:5px solid white; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #515459;
+}
+
+#ritem {
+  /* border:5px solid white; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #515459;
+}
+table {
+  border-spacing: 13px;
+}

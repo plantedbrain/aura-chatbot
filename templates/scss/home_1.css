@@ -1,0 +1,93 @@
+body
+{
+  width: 80%;;
+  margin: 0px;
+  padding: 0px;
+  background:black;
+}
+.body::-webkit-scrollbar
+{
+  display: none;
+}
+.main
+{
+  position: absolute;
+  width: 90%;
+  height:16%;
+  padding: 5px;
+  top:5%;
+  left:5%;
+  display: block;
+  background-color: #1e1e1e;
+}
+
+.main li,ul
+{
+  float:right;
+  list-style-type: none;
+  padding: 19px;
+
+}
+.main img
+{
+  position: relative;
+  left: 50%;
+  width: 40px;
+  padding-left: 19px;
+  padding-right: 19px;
+}
+.data
+{
+  position:absolute;
+  top:40%;
+  left:5%;
+  right:45%;
+  height: 40%;
+  color : white;
+  font-size: 30px;
+}
+.pic
+{
+  height:600px;
+  width: 500px;
+}
+.customer
+{
+  position: absolute;
+  top:100%;
+  left: 60%;
+  right:5%;
+  color:white;
+  font-size: 30px;
+
+}
+.company
+{
+  position: absolute;
+  top:100%;
+  left: 5%;
+  right:65%;
+  color : white;
+  font-size: 30px;
+
+}
+a{
+  text-decoration: none;
+}
+.company button , .customer button
+{
+  background:none;
+  width:300px;
+  height: 60px;
+  margin : 20px auto;
+  display : block;
+  text-align:center;
+  letter-spacing:5px;
+  cursor:pointer;
+  border :2px solid #3498db;
+  color:white;
+  transition : 0.25s;
+  outline:none;
+
+
+}

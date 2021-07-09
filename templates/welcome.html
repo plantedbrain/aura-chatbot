@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="scss/dark.css">
+    <script src="js/sweetalert2.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="scss/Homeus.css">
+
+    <link rel="stylesheet" href="style.css">
+    <style media="screen">
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&display=swap');
+
+    *
+    {
+      scroll-behavior: smooth;
+    }
+
+    body
+    {
+      color:white;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+  background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+
+    header li, a, button
+    {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      text-decoration: none;
+      position: sticky;
+    }
+
+    .btn
+    {
+      color:white;
+      padding: 16px 30px;
+      border: 2px solid #e7e7e7
+      cursor: pointer;
+      background-color:inherit ;
+      text-align: center;
+      border: 2px solid green;
+      border-color:#3498db;
+    }
+
+    .btn:hover
+    {
+      background-color:#3e8e41;
+    }
+
+    header
+    {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 10px;
+      position: sticky;
+    }
+
+    .nav_links
+    {
+      list-style: none;
+      margin-right: 60px;
+    }
+
+    .nav_links li {
+      display: inline-block;
+      padding: 0px 20px;
+      height: 20px;
+    }
+
+    .nav_links li a {
+      transition: all 0.3s ease 0s;
+    }
+
+    .nav_links li a:hover {
+      color: #000F0F;
+    }
+    .Med
+    {
+      height:600px;
+      width:75%;
+    }
+
+    .banner {
+      height: 560px;
+      width: 70%;
+      margin: auto;
+      margin-bottom: 60px;
+      background-size: cover;
+    }
+    .container   {
+      height: 1250px;
+      width: 90%;
+      /* border:5px solid white; */
+      margin: auto;
+      margin-bottom: 20px;
+    }
+    .first, .second, .third {
+      height: 380px;
+      width: 85%;
+      /* border:5px solid white; */
+      margin: auto;
+      margin-bottom: 30px;
+      background-color:inherit;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    }
+    .image {
+      height: 95%;
+      width: 30%;
+      /* border:5px solid white; */
+
+      float: left;
+      margin-top: 8px;
+    }
+    #img {
+      margin-left: 5px;
+      background:  no-repeat;
+      background-size: contain;
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+    #img1 {
+      margin-left: 5px;
+      background: url("img/chatbot.png") no-repeat;
+      background-size: contain;
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+    #imgg {
+      margin-left: 50px;
+      background: url("img/flask.png") no-repeat;
+      background-size: contain;
+      margin-top: 20px;
+      margin-left: 20px;
+
+    }
+    .content {
+      /* border:5px solid white; */
+      float: left;
+      height: 70%;
+      width: 65%;
+      margin-top: 55px;
+      color: #00000;
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 300;
+      background-color:none;
+    }
+    #p2, #pp {
+      background-color: none;
+      width: 80%;
+      font-weight: bold;
+      font-size: 25px;
+      margin-top: 50px;
+      margin-left: 100px;
+    }
+
+    /* Contact Section */
+    .contact {
+      padding: 20px 0;
+      text-align: center;
+      margin-bottom: 40px;
+
+    }
+    .inner {
+      max-width: 600px;
+      margin: auto;
+      padding: 0 20px;
+
+    }
+    .contact h1 {
+      font-size: 35px;
+      color: #888;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-weight: 400;
+    }
+    .name, .email, .message {
+      background: none;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid;
+      color: #888;
+      padding: 15px 6px;
+      font-size: 14px;
+      margin-bottom: 40px;
+
+    }
+    .name {
+      float: left;
+      width: 270px;
+    }
+    .email {
+      float: right;
+      width: 270px;
+    }
+    .message {
+      width: 100%
+    }
+    .swal2-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    }
+
+    </style>
+
+  </head>
+  <body>
+
+    <header>
+       <img src="{{url_for('static',filename = 'img/AURA.png')}}"  height="90px" />
+      <nav>
+        <ul class="nav_links">
+
+
+          <li> <a href="{{ url_for('index') }}"> <button type="button" id="login"  class="btn" >A.U.R.A</button></a></li>
+          <li> <a href="{{ url_for('about_us') }}"> <button type="button" id="login"  class="btn" >About Us</button></a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <div class="container">
+      <div class="first">
+        <div class="image" id="img">
+           <img src="{{url_for('static',filename = 'img/AURA.png')}}"  height="90%" />
+        </div>
+      <div class="content">
+        <p id="pp"> A.U.R.A</p>
+        The purpose of this project is to showcase the power of chatbots and how they can be an alternative to using an application or even a website.<br>
+        A.U.R.A’s functions at its base level allows users to interact with it and allow a smooth conversation to take place.
+
+      </div>
+    </div>
+    <div class="second">
+
+        <div class="content" >
+          <p id="pp">Chatter Bot</p>
+
+              ChatterBot is a Python library that makes it easy to generate automated responses to a user’s input.
+              ChatterBot uses a selection of machine learning algorithms to produce different types of responses.
+              An untrained instance of ChatterBot starts off with no knowledge of how to communicate.
+              Each time a user enters a statement, the library saves the text that they entered and the text that the statement was in response to.
+              As ChatterBot receives more input the number of responses that it can reply and the accuracy of each response in relation to the input
+              statement increase.The program selects the closest matching response by searching for the closest matching known statement that matches
+              the input, it then chooses a response from the selection of known responses to that statement.
+      </div>
+      <div class="image" id="img1">
+         <img src="{{url_for('static',filename = 'img/chatbot.png')}}" height="90%" />
+      </div>
+</div>
+      <div class="third">
+        <div class="image" id="imgg">
+             <img src="{{url_for('static',filename = 'img/flask.png')}}" height="90%" />
+        </div>s
+        <div class="content">
+          <p id="p2">Flask</p>
+            Flask is a micro web framework written in Python.<br>
+             It is classified as a microframework because it does not require particular tools or libraries.
+             It has no database abstraction layer, form validation, or any other components where pre-existing
+             third-party libraries provide common functions. However, Flask supports extensions that can add application
+             features as if they were implemented in Flask itself.
+             Extensions exist for object-relational mappers, form validation, upload handling, various open authentication
+             stechnologies and several common framework related tools.
+
+          </div>
+
+
+      </div>
+
+
+    <div class="contact" id="contact">
+    <div class="inner">
+      <h1 style="color:white;">Get in touch with us</h1>
+      <input type="text"  class="name" placeholder="Your Name" />
+      <input type="email"  class="email" placeholder="Your Email" />
+      <br><textarea rows="1" placeholder="Message" class="message" /></textarea>
+      <br><button class="btn" onclick="contact()" required/>Get in touch</button>
+    </div>
+  </div>
+
+
+
+
+  </body>
+</html>

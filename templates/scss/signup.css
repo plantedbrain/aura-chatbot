@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color:#171717;
+
+}
+
+li, a, button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10px;
+}
+.logo {
+  cursor: pointer;
+  margin-left: 100px;
+}
+
+.nav_links {
+  list-style: none;
+  margin-right: 100px;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: grey;
+}
+
+.btn{
+  background-color: none;
+  color: white;
+  padding: 16px 30px;
+  border: 2px solid #e7e7e7
+  cursor: pointer;
+  text-align: center;
+  border: 2px solid green;
+  border-color:#3498db;
+}
+
+.btn:hover {
+  background-color: white;
+  background-color:#3e8e41;
+}
+
+.heading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  width: 35%;
+  height: 8vh;
+  font-size: 40px;
+  color: white;
+  display: block;
+  justify-content: left;
+  position: relative;
+  margin-left: 120px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 5px;
+}
+.container {
+  margin-left: 125px;
+  margin-top: 100px;
+  /* border:5px solid white; */
+  color: white;
+  width: 45%;
+  height: 280px;
+  /* position: absolute; */
+}
+
+.company {
+  float: left;
+  width: 40%;
+  height: 100%;
+  margin-right: 60px;
+  /* border:5px solid white; */
+
+}
+
+.customer {
+  float: left;
+  width: 40%;
+  height: 100%;
+  /* border:5px solid white; */
+
+}
+.container h3 {
+  font-size: 35px;
+  font-family: Inconsolata, sans-serif;
+  font-weight: 800;
+}
+.container p {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  weight: 300;
+}
+.container button {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  background-color: none;
+}
+.copyright {
+  color: grey;
+  margin-top: 50px;
+  margin-left: 125px;
+}
+.image1 {
+  /* border:5px solid white; */
+  float: right;
+  height: 600px;
+  width: 30%;
+  margin-right: 220px;
+}

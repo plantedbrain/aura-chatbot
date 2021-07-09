@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&display=swap');
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color:white;
+  font-family: "Montserrat", sans-serif;
+  background-color:#171717;
+
+}
+
+header li, a, button {
+
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  position: sticky;
+}
+.btn{
+
+  background-color: #171717;
+  color: white;
+  padding: 16px 30px;
+  border: 2px solid #e7e7e7
+  cursor: pointer;
+  text-align: center;
+  border: 2px solid green;
+  border-color:#3498db;
+}
+
+.btn:hover {
+  background-color: white;
+  background-color:#3e8e41;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10px;
+  position: sticky;
+}
+.logo {
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+.nav_links {
+  list-style: none;
+  margin-right: 60px;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: grey;
+}
+/* .user
+{
+    position:absolute;
+    top:20%;
+    left:14%;
+    height:40%;
+    width:20%;
+    background-color: black;
+
+} */
+
+.details
+{
+  height: 530px;
+  width: 65%;
+  /* border:5px solid white; */
+  margin: auto;
+  background-color: #474241;
+}
+.image {
+  color: white;
+  font-size:300%;
+  height: 400px;
+  width: 30%;
+  padding-top: 5%;
+  /* border:5px solid white; */
+  margin-left: 30px;
+  margin-top: 60px;
+  /* background: url("/web/img/medd.png") no-repeat; */
+  float: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.pcontent {
+  height: 460px;
+  width: 65%;
+  /* border:5px solid white; */
+  margin-left: 10px;
+  margin-top: 60px;
+
+  /* background: url("/web/img/medd.png") no-repeat; */
+  float: left;
+  margin-top: 20px;
+}
+.info {
+  width: 80%;
+  margin-left: 40px;
+  font-size: 20px;
+  /* border:5px solid white; */
+}
+
+.b-skills
+{
+  margin: auto;
+	margin-top: 40px;
+	text-align: center;
+  margin-bottom: 40px;
+  height: 320px;
+  width: 70%;
+  /* border:5px solid white; */
+}
+.skill-item
+{
+	position: relative;
+	max-width: 120%;
+	width: 100%;
+	color: #FFFEF2;
+}
+
+.chart-container
+{
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-top: 100%;
+}
+
+.skill-item .chart,
+.skill-item .chart canvas
+{
+	position: absolute;
+	top: 0;
+	left:0;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.skill-item .chart:before
+{
+	content: "";
+	width: 0;
+	height: 100%;
+}
+
+.skill-item .chart:before,
+.skill-item .percent
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.skill-item .percent
+{
+	position: relative;
+	line-height: 1;
+	font-size: 40px;
+	font-weight: 900;
+	z-index: 2;
+}
+
+.skill-item  .percent:after
+{
+	content: attr(data-after);
+	font-size: 20px;
+}
+.contact {
+position: absolute;
+left:35%;
+top:110%;
+  text-align: left;
+  margin-bottom: 40px;
+  margin-top: 80px;
+
+  /* border:5px solid white; */
+  /* border:5px solid white; */
+}
+.inner {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 20px;
+  /* border:5px solid white; */
+}
+.contact h1 {
+  text-align: center;
+    font-size: 35px;
+  color: #888;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 400;
+}
+.name, .email, .message {
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid;
+  color: #888;
+  padding: 15px 6px;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+.name {
+  float: left;
+  width: 270px;
+}
+.email {
+  float: right;
+  width: 270px;
+}
+.message {
+  width: 100%
+}
+.swal2-title {
+font-family: "Montserrat", sans-serif;
+font-weight: 400;
+}
+section {
+  width: 620px;
+  height: 100px;
+  position: relative;
+  direction: rtl;
+  text-align:center;
+}
+.rating {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  background: white;
+
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+label:hover, label:hover ~ label, input:checked ~ label {
+  background: gold;
+  cursor: pointer;
+}
+.rcontent:after {
+  content: "";
+  position: inherit;
+  top: 0px;
+  width: 90%;
+  left: 5%;
+  height: 40px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+label:nth-of-type(5):hover ~ .rcontent:after {
+  content: "Poor";
+  color: gold;
+}
+label:nth-of-type(4):hover ~ .rcontent:after {
+  content: "Good";
+  color: gold;
+}
+label:nth-of-type(3):hover ~ .rcontent:after {
+  content: "Very Good";
+  color: gold;
+}
+label:nth-of-type(2):hover ~ .rcontent:after {
+  content: "Better";
+  color: gold;
+}
+label:nth-of-type(1):hover ~ .rcontent:after {
+  content: "Excellent";
+  color: gold;
+}
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+#feedback {
+  font-size: 20px;
+
+}
+.rrcontent:after {
+  content: "";
+  position: inherit;
+  top: 0px;
+  width: 90%;
+  left: 5%;
+  height: 40px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+label:nth-of-type(5):hover ~ .rrcontent:after {
+  content: "I would not";
+  color: gold;
+}
+label:nth-of-type(4):hover ~ .rrcontent:after {
+  content: "Likely";
+  color: gold;
+}
+label:nth-of-type(3):hover ~ .rrcontent:after {
+  content: "Very Likely";
+  color: gold;
+}
+label:nth-of-type(2):hover ~ .rrcontent:after {
+  content: "Average";
+  color: gold;
+}
+label:nth-of-type(1):hover ~ .rrcontent:after {
+  content: "100%";
+  color: gold;
+}
+#v:checked ~ p:after {
+  content: "Poor";
+  color: Red;
+}
+#f:checked ~ p:after {
+  content: "Good";
+  color: lightBlue;
+}
+#r:checked ~ p:after {
+  content: "Very Good";
+  color: #1254D2 ;
+}
+#t:checked ~ p:after {
+  content: "Better";
+  color: Orange;
+}
+#o:checked ~ p:after {
+  content: "Excellent";
+  color: gold;
+}
+#e:checked ~ p:after {
+  content: "I would not";
+  color: Red;
+}
+#d:checked ~ p:after {
+  content: "Likely";
+  color: lightBlue;
+}
+#c:checked ~ p:after {
+  content: "Very Likely";
+  color: #1254D2 ;
+}
+#b:checked ~ p:after {
+  content: "Average";
+  color: Orange;
+}
+#a:checked ~ p:after {
+  content: "100%";
+  color: gold;
+}
+.stay-home {
+  width: 40%;
+  height: 400px;
+  /* border:5px solid white; */
+  float:left;
+  margin-top: 200px;
+}

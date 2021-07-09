@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&display=swap');
+
+*
+{
+  scroll-behavior: smooth;
+}
+
+body {
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color:#171717;
+
+}
+
+header li, a, button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  position: sticky;
+}
+.btn{
+  background-color: #171717;
+  color: white;
+  padding: 16px 30px;
+  border: 2px solid #e7e7e7
+  cursor: pointer;
+  text-align: center;
+  border: 2px solid green;
+  border-color:#3498db;
+}
+
+.btn:hover {
+  background-color: white;
+  background-color:#3e8e41;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10px;
+  position: sticky;
+}
+.logo {
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+.nav_links {
+  list-style: none;
+  margin-right: 60px;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: grey;
+}
+.Med
+{
+  height:600px;
+  width:75%;
+}
+
+.banner {
+  height: 560px;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 60px;
+  background-size: cover;
+}
+.container   {
+  height: 1250px;
+  width: 90%;
+  /* border:5px solid white; */
+  margin: auto;
+  margin-bottom: 20px;
+}
+.first, .second, .third {
+  height: 380px;
+  width: 85%;
+  /* border:5px solid white; */
+  margin: auto;
+  margin-bottom: 30px;
+  background-color:none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.image {
+  height: 95%;
+  width: 30%;
+  /* border:5px solid white; */
+
+  float: left;
+  margin-top: 8px;
+}
+#img {
+  margin-left: 5px;
+  background: url("/web/img/survey.png") no-repeat;
+  background-size: contain;
+  margin-top: 45px;
+  margin-left: 20px;
+}
+#img1 {
+  margin-left: 5px;
+  background: url("/web/img/lab.png") no-repeat;
+  background-size: contain;
+  margin-top: 45px;
+  margin-left: 20px;
+}
+#imgg {
+  margin-left: 50px;
+  background: url("/web/img/research.png") no-repeat;
+  background-size: contain;
+  margin-top: 45px;
+  margin-left: 20px;
+
+}
+.content {
+  /* border:5px solid white; */
+  float: left;
+  height: 70%;
+  width: 65%;
+  margin-top: 55px;
+  color: white;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  background-color:none;
+}
+#p2, #pp {
+  background-color: none;
+  width: 80%;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
+/* Contact Section */
+.contact {
+  padding: 20px 0;
+  text-align: center;
+  margin-bottom: 40px;
+
+}
+.inner {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 20px;
+
+}
+.contact h1 {
+  font-size: 35px;
+  color: #888;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 400;
+}
+.name, .email, .message {
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid;
+  color: #888;
+  padding: 15px 6px;
+  font-size: 14px;
+  margin-bottom: 40px;
+
+}
+.name {
+  float: left;
+  width: 270px;
+}
+.email {
+  float: right;
+  width: 270px;
+}
+.message {
+  width: 100%
+}
+.swal2-title {
+font-family: "Montserrat", sans-serif;
+font-weight: 400;
+}

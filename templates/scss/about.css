@@ -1,0 +1,89 @@
+body{
+  background-color: #1e1e1e;
+  color:#FFFEF2;
+}
+   .user
+   {
+       position:absolute;
+       top:30%;
+       left:9%;
+       height:40%;
+       width:20%;
+       background-color: black;
+   }
+   .details
+   {
+     position:absolute;
+     left:45%;
+     top:10%;
+     line-height:5px;
+   }
+
+.b-skills
+{
+	padding-top: 25%;
+	text-align: center;
+  padding-left: 5%;
+
+}
+
+
+
+.skill-item
+{
+	position: relative;
+	max-width: 120%;
+	width: 100%;
+	color: #FFFEF2;
+}
+
+.chart-container
+{
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-top: 100%;
+}
+
+.skill-item .chart,
+.skill-item .chart canvas
+{
+	position: absolute;
+	top: 0;
+	left:0;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.skill-item .chart:before
+{
+	content: "";
+	width: 0;
+	height: 100%;
+}
+
+.skill-item .chart:before,
+.skill-item .percent
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.skill-item .percent
+{
+	position: relative;
+	line-height: 1;
+	font-size: 40px;
+	font-weight: 900;
+	z-index: 2;
+}
+
+.skill-item  .percent:after
+{
+	content: attr(data-after);
+	font-size: 20px;
+}
+
+       p{
+           font-weight: 900;
+       }

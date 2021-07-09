@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Kosugi&display=swap');
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color:#1e1e1e;
+
+}
+
+
+
+header li, a, button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  position: sticky;
+}
+
+.btn{
+  background-color: #171717;
+  color: white;
+  padding: 16px 30px;
+  /* border: 2px solid #e7e7e7 */
+  cursor: pointer;
+  text-align: center;
+  border: 2px solid green;
+  border-color:#3498db;
+}
+
+.btn:hover {
+
+  background-color:#3e8e41;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:  10px;
+  position: sticky;
+}
+.logo {
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+.nav_links {
+  list-style: none;
+  margin-right: 60px;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: grey;
+}
+.banner {
+  height: 530px;
+  width: 65%;
+  /* border:5px solid white; */
+  margin: auto;
+  margin-bottom: 60px;
+  /* background: url("/web/img/medd.png") no-repeat; */
+  background-color: #474241;
+
+}
+.image {
+  height: 400px;
+  width: 30%;
+  /* border:5px solid white; */
+  margin-left: 30px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  /* background: url("/web/img/medd.png") no-repeat; */
+  float: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: url("/mini/img/12.p.jpg") no-repeat;
+  background-size: contain;
+}
+.pcontent {
+  height: 460px;
+  width: 65%;
+  /* border:5px solid white; */
+  margin-left: 10px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  /* background: url("/web/img/medd.png") no-repeat; */
+  float: left;
+  margin-top: 20px;
+
+}
+.pname {
+  height: 45px;
+  width: 90%;
+  /* border:5px solid white; */
+  margin-left: 40px;
+  margin-top: 40px;
+
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+.reviews {
+  /* border:5px solid white; */
+  height: 20px;
+  width: 50%;
+  margin-left: 40px;
+}
+.price {
+    margin-left: 40px;
+    display: flex;
+    color: white;
+}
+i {
+  color: white;
+}
+h3, p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 21px;
+}
+p{
+  text-align: left;
+  /* width: 94%; */
+}
+.info {
+    margin-left: 40px;
+    color: white;
+}
+#view {
+  padding: 16px 242px;
+
+}
+#sixth {
+  margin-bottom: 75px;
+}
+#sixth-banner {
+  height: 570px;
+}
+#third-banner {
+  height: 590px;
+}
+#ninth {
+  margin-top: 25px;
+}
+.scroll {
+  float: right;
+  /* border:5px solid white; */
+  margin-top: 30px;
+  margin-right: 30px;
+}
+.banner #first {
+    margin-left: 20px;
+    float: left;
+}
+.health {
+  float: left;
+  /* border:5px solid white; */
+  margin-top: 30px;
+  margin-left: 30px;
+  position: fixed;
+}

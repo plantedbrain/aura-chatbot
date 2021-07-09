@@ -1,0 +1,46 @@
+footer {
+  color: white;
+  text-align: center;
+  background-color: white;
+
+  padding: 10px 40px;
+}
+.footer-container {
+  height: 350px;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  background-color: white ;
+  color: black;
+}
+h2
+{
+  padding-top: 10%;
+}
+.p1 {
+  padding-left: 10%;
+  width: 20%;
+  background-color: white;
+}
+#a {
+  list-style-type: none;
+}
+#a li{
+  background-color: white;
+}
+#a li a {
+  color: black;
+  background-color: white;
+}
+#h {
+  background-color: white;
+}
+.pp {
+
+  padding: 2%;
+  width: 30%;
+  background-color: white;
+}
+footer img {
+  background-color: white;
+}
